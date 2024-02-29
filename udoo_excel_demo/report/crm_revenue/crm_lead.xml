@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Copyright 2019 Ecosoft Co., Ltd.
+  License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).-->
+<odoo>
+    <record id="report_crm_lead" model="ir.ui.view">
+        <field name="name">report.crm.lead</field>
+        <field name="model">report.crm.lead</field>
+        <field name="inherit_id" ref="udoo_excel.xlsx_report_view"/>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='criteria']" position="inside">
+                <group>
+                    <field name="team_id" placeholder="Select an option..."/>
+                </group>
+                <group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_report_crm_lead" model="ir.actions.act_window">
+        <field name="name">Sample Lead Report</field>
+        <field name="res_model">report.crm.lead</field>
+        <field name="binding_view_types">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">
+            {'template_domain': [('res_model', '=', 'report.crm.lead'),
+                                 ('fname', '=', 'crm_lead.xlsx'),
+                                 ('gname', '=', False)]}
+        </field>
+    </record>
+
+    <record id="report_crm_lead_template" model="xlsx.template">
+        <field name="res_model">report.crm.lead</field>
+        <field name="fname">crm_lead.xlsx</field>
+        <field name="name">Report CRM Lead Template</field>
+        <field name="description">Sample Report Sales Order Tempalte for testing</field>
+        <field name="input_instruction">{'__EXPORT__': {'crm_lead': {}, 'revenue_by_country': {}, 'revenue_by_team': {}}}</field>
+    </record>
+
+    <function model="xlsx.template" name="load_xlsx_template">
+        <value eval="[ref('report_crm_lead_template')]"/>
+    </function>
+
+    <menuitem id="menu_report_crm_lead" parent="sale.menu_sale_report" action="action_report_crm_lead"/>
+</odoo>
