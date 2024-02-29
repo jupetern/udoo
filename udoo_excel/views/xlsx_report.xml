@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="xlsx_report_view" model="ir.ui.view">
+        <field name="name">xlsx.report.view</field>
+        <field name="model">xlsx.report</field>
+        <field name="arch" type="xml">
+            <form string="Excel Report">
+                <!-- search criteria -->
+                <group name="criteria" invisible="state !='choose'">
+                </group>
+                <!-- xlsx.report common field -->
+                <div name="xlsx.report">
+                    <field name="state" invisible="1"/>
+                    <field name="name" invisible="1"/>
+                    <field name="choose_template" invisible="1"/>
+                    <div name ="additional" invisible="state !='choose'">
+                        <separator string="Additional options" invisible="choose_template == False"/>
+                        <label string="Choose Template: " for="template_id" invisible="choose_template == False"/>
+                        <field name="template_id" invisible="choose_template == False"/>
+                    </div>
+                    <div invisible="state !='get'">
+                        <h3 class="mb-3">
+                            Report File Is Ready To Download!
+                        </h3>
+                        <p colspan="4">
+                            Link:  <field name="data" filename="name" class="oe_inline"/>
+                        </p>
+                    </div>
+                    <footer invisible="state !='choose'">
+                        <button name="report_xlsx" icon="fa-ri ri-file-excel-2-line" title="Export Data into Excel" type="object" class="btn btn-secondary"/>
+                        <button special="cancel" string="Cancel" type="object" class="btn btn-light"/>
+                    </footer>
+                    <footer invisible="state !='get'">
+                        <button special="cancel" string="Close" type="object"/>
+                    </footer>
+                </div>
+            </form>
+        </field>
+    </record>
+</odoo>

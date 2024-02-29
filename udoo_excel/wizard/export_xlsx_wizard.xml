@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="export_xlsx_wizard" model="ir.ui.view">
+        <field name="name">export.xlsx.wizard</field>
+        <field name="model">export.xlsx.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Get Import Template">
+                <field invisible="1" name="state"/>
+                <field name="name" invisible="1"/>
+                <group invisible="state !='choose'">
+                    <group>
+                        <field name="template_id" widget="selection"/>
+                    </group>
+                    <group>
+                        <field name="res_model" invisible="1"/>
+                        <field name="res_ids" invisible="1"/>
+                    </group>
+                </group>
+                <div invisible="state !='get'">
+                    <h2>Complete Prepare File (.xlsx)</h2>
+                    <p>Here is the exported file: <field name="data" readonly="1" filename="name"/>
+                    </p>
+                </div>
+                <footer invisible="state !='choose'">
+                    <button name="action_export" string="Export" type="object" default_focus="1" class="oe_highlight" data-hotkey="q"/>
+                    <button special="cancel" string="Cancel" type="object" class="btn-secondary" data-hotkey="z"/>
+                </footer>
+                <footer invisible="state !='get'">
+                    <button special="cancel" string="Close" type="object" class="btn-secondary" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

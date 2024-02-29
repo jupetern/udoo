@@ -1,0 +1,1280 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* udoo_excel
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-25 02:40+0000\n"
+"PO-Revision-Date: 2024-02-25 02:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "${object.post_import_do_something()}"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/common.py:0
+#: code:addons/udoo_excel/models/common.py:0
+#, python-format
+msgid "'%s' sheet not found"
+msgstr "không tìm thấy trang tính '%s'"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_report__state
+msgid ""
+"* Choose: Wizard show in user selection mode\n"
+"* Get: Wizard show results from user action"
+msgstr ""
+"* Chọn: Trình hướng dẫn hiển thị ở chế độ lựa chọn người dùng\n"
+"* Nhận: Trình hướng dẫn hiển thị kết quả từ hành động của người dùng"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_export_xlsx_wizard__state
+#: model:ir.model.fields,help:udoo_excel.field_import_xlsx_wizard__state
+msgid ""
+"* Choose: wizard show in user selection mode\n"
+"* Get: wizard show results from user action"
+msgstr ""
+"* Chọn: Trình hướng dẫn hiển thị ở chế độ lựa chọn người dùng\n"
+"* Nhận: Trình hướng dẫn hiển thị kết quả từ hành động của người dùng"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<b>Cell</b>: Location of data in excel sheet (e.g., A1, B1, ...)"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Continue</b>: If not selected, start rolling with specified first row "
+"cells. If selected, continue from previous one2many field"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Extend</b>: If selected, extend one row after one data row in order to "
+"preserve the sum line"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Field Cond.</b>: Python code in <code>$</code>\n"
+"                                        <code>{...}</code> to manipulate field value, e.g., if field = product_id, <code>value</code> will represent product object, e.g., <code>$</code>\n"
+"                                        <code>{value and value.uom_id.name or \"\"}</code>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Field Cond.</b>: Python code in <code>$</code>\n"
+"                                        <code>{...}</code> value will represent data from excel cell, e.g., if A1 = 'ABC', <code>value</code> will represent 'ABC', e.g., <code>$</code>\n"
+"                                        <code>{value == \"ABC\" and \"X\" or \"Y\"}</code> thus can change from cell value to other value for import."
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<b>Field</b>: Field of the record to be imported to, e.g., product_id"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Field</b>: Field of the record, e.g., product_id.uom_id.name. They are "
+"orm compliant."
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>No Delete</b>: By default, all one2many lines will be deleted before "
+"import. Select this, to avoid deletion"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<b>Note:</b>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Row Field</b>: Use _HEAD_ for the record itself, and one2many field "
+"(e.g., line_ids) for row data"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Row Field</b>: Use _HEAD_ for the record itself, and one2many field for "
+"row data, e.g., order_line, line_ids<code>[max_row]</code> where "
+"<code>[max_row]</code> is optional number of rows to import"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<b>Sheet</b>: Name (e.g., Sheet 1) or index (e.g., 1) of excel sheet"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Sheet</b>: Name (e.g., Sheet 1) or index (e.g., 1) of excel sheet to "
+"export data to"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Style w/Cond.</b>: Conditional style by python code in "
+"<code>#?...?</code>, e.g., apply style for specific product, "
+"<code>#?value.name == \"ABC\" and #{font=bold;fill=red} or None?</code>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<b>Style</b>: Default style in <code>#{...}</code> that apply to each cell, "
+"e.g., <code>#{align=left;format=text}</code>. See module's <b>style.py</b> "
+"for available styles."
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<b>Sum</b>: Add sum value on last row, <code>@{sum}</code>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<code class=\"oe_grey\">\n"
+"{\n"
+"    '__EXPORT__': {\n"
+"        'sale_order': {  # sheet can be name (string) or index (integer)\n"
+"            '_HEAD_': {\n"
+"                'B2': 'partner_id.display_name<span>$</span>{value or \"\"}#{align=left;format=text}',\n"
+"                'B3': 'name<span>$</span>{value or \"\"}#{align=left;format=text}',\n"
+"            },\n"
+"            'line_ids': {  # prefix with _CONT_ to continue rows from previous row field\n"
+"                'A6': 'product_id.display_name<span>$</span>{value or \"\"}#{format=text}',\n"
+"                'C6': 'product_uom_qty<span>$</span>{value or 0}#{format=number}',\n"
+"                'E6': 'price_unit<span>$</span>{value or 0}#{format=number}',\n"
+"                'G6': 'price_subtotal<span>$</span>{value or 0}#{format=number}',\n"
+"            },\n"
+"        },\n"
+"    },\n"
+"    '__IMPORT__': {\n"
+"        'sale_order': {  # sheet can be name (string) or index (integer)\n"
+"            'order_line': {  # prefix with _NODEL_ to not delete rows before import\n"
+"                'A6': 'product_id',\n"
+"                'C6': 'product_uom_qty',\n"
+"                'E6': 'price_unit<span>$</span>{value &gt; 0 and value or 0}',\n"
+"            },\n"
+"        },\n"
+"    },\n"
+"    '__POST_IMPORT__': '<span>$</span>{object.post_import_do_something()}',\n"
+"}\n"
+"                                    </code>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<code>date, datetime, time</code>: some useful python classes"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<code>model</code>: active model, e.g., self.env['my.model']"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"<code>object</code>: record object or line object depends on <b>Row "
+"Field</b>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<code>value</code>: value from <b>Cell</b>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "<code>value</code>: value from <b>Field</b>"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add Export Action"
+msgstr "Thêm hành động xuất"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add Import Action"
+msgstr "Thêm hành động nhập"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add Report Menu"
+msgstr "Thêm menu báo cáo"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add data column"
+msgstr "Thêm cột dữ liệu"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add header section"
+msgstr "Thêm tiêu đề"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add new report menu at root level"
+msgstr "Thêm menu báo cáo mới ở cấp độ gốc"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add row section"
+msgstr "Thêm hàng"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Add sheet section"
+msgstr "Thêm trang"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Additional options"
+msgstr "Tùy chọn bổ sung"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_report__choose_template
+msgid "Allow Choose Template"
+msgstr "Cho phép chọn mẫu"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_styles
+msgid "Available styles for excel"
+msgstr "Định dạng có sẵn cho Excel"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template_import__no_delete
+msgid ""
+"By default, all rows will be deleted before import.\n"
+"Select No Delete, otherwise"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__csv_delimiter
+msgid "CSV Delimiter"
+msgstr "Dấu phân cách CSV"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__csv_extension
+msgid "CSV File Extension"
+msgstr "Tiện ích mở rộng tệp CSV"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__csv_quote
+msgid "CSV Quoting"
+msgstr "Trích dẫn CSV"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__post_import_hook
+msgid ""
+"Call a function after successful import, i.e.,\n"
+"${object.post_import_do_something()}"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.export_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.import_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.report_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__excel_cell
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__excel_cell
+msgid "Cell"
+msgstr "Ô"
+
+#. module: udoo_excel
+#: model:ir.model.fields.selection,name:udoo_excel.selection__export_xlsx_wizard__state__choose
+#: model:ir.model.fields.selection,name:udoo_excel.selection__import_xlsx_wizard__state__choose
+#: model:ir.model.fields.selection,name:udoo_excel.selection__report_crm_lead__state__choose
+#: model:ir.model.fields.selection,name:udoo_excel.selection__report_sale_order__state__choose
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_report__state__choose
+msgid "Choose"
+msgstr "Chọn"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Choose Template:"
+msgstr "Chọn mẫu:"
+
+#. module: udoo_excel
+#: model_terms:ir.actions.act_window,help:udoo_excel.action_xlsx_template
+msgid "Click to create a Excel Template Object."
+msgstr "Bấm để tạo đối tượng mẫu Excel."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.export_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.import_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Close"
+msgstr "Đóng"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.export_xlsx_wizard
+msgid "Complete Prepare File (.xlsx)"
+msgstr "Hoàn thành tệp chuẩn bị (.xlsx)"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__is_cont
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template_export__is_cont
+msgid "Continue data rows after last data row"
+msgstr "Tiếp tục các hàng dữ liệu sau hàng dữ liệu cuối cùng"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__to_csv
+msgid "Convert file into CSV format on export"
+msgstr "Chuyển đổi tệp thành định dạng CSV khi xuất"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__to_csv
+msgid "Convert to CSV?"
+msgstr "Chuyển đổi sang CSV?"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__create_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__create_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__create_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__create_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__create_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__create_date
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__create_date
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__create_date
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__create_date
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__create_date
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: udoo_excel
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_export__section_type__data
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_import__section_type__data
+msgid "Data"
+msgstr "Dữ liệu"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "Data Import Result"
+msgstr "Kết quả nhập dữ liệu"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__style
+msgid "Default Style"
+msgstr "Định dạng mặc định"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_template_export
+msgid "Detailed of how excel data will be exported"
+msgstr "Chi tiết về cách xuất dữ liệu Excel"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_template_import
+msgid "Detailed of how excel data will be imported"
+msgstr "Chi tiết về cách nhập dữ liệu Excel"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__display_name
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__display_name
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__display_name
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__display_name
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__display_name
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "Document must be in %s states"
+msgstr "Tài liệu phải ở trạng thái %s"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "Document must be in draft state"
+msgstr "Tài liệu phải ở trạng thái nháp"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__use_report_wizard
+msgid "Easy Reporting"
+msgstr "Dùng trình tích hợp"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid ""
+"Error deleting data\n"
+"%s"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#, python-format
+msgid ""
+"Error filling data into Excel sheets\n"
+"%s"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid "Error importing data"
+msgstr "Lỗi khi nhập dữ liệu"
+
+#. module: udoo_excel
+#: model:ir.model.fields.selection,name:udoo_excel.selection__ir_actions_report__report_type__excel
+msgid "Excel"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.ui.menu,name:udoo_excel.menu_excel_import_export
+msgid "Excel Engine"
+msgstr "Công cụ Excel"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_export
+msgid "Excel Export AbstractModel"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_import
+msgid "Excel Import AbstractModel"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Excel Report"
+msgstr "Báo cáo Excel"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_report
+msgid "Excel Report AbstractModel"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.actions.act_window,name:udoo_excel.action_xlsx_template
+#: model:ir.ui.menu,name:udoo_excel.menu_xlsx_template
+msgid "Excel Templates"
+msgstr "Mẫu Excel"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_xlsx_template
+msgid "Excel template file and instruction"
+msgstr "Tệp mẫu và hướng dẫn mẫu"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.report_xlsx_wizard
+msgid "Execute"
+msgstr "Thực thi"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__export_ids
+#: model_terms:ir.ui.view,arch_db:udoo_excel.export_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Export"
+msgstr "Xuất"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__export_action_id
+msgid "Export Action"
+msgstr "Hành động xuất"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Export Data into Excel"
+msgstr "Xuất dữ liệu sang Excel"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"Export Instruction is how to write data from an active data record to specified cells in excel sheet.\n"
+"                                  For example, an active record can be a sale order that user want to export.\n"
+"                                  The record itself will be mapped to the header part of excel sheet. The record can contain multiple one2many fields, which will be written as data lines.\n"
+"                                  You can look at following instruction as Excel Sheet(s), each with 1 header section (_HEAD_) and multiple row sections (one2many fields)."
+msgstr ""
+"Chỉ dẫn xuất là làm thế nào để ghi dữ liệu từ bản ghi dữ liệu hoạt động sang các ô được chỉ định trong bảng Excel.\n"
+"                                  Ví dụ, một bản ghi hoạt động có thể là một đơn đặt hàng mà người dùng muốn xuất.\n"
+"                                  Bản thân bản ghi sẽ được ánh xạ tới phần tiêu đề của tờ Excel. Bản ghi có thể chứa nhiều trường One2Many, sẽ được viết dưới dạng các dòng dữ liệu.\n"
+"                                  Bạn có thể xem hướng dẫn sau dưới dạng (các) bảng excel, mỗi phần có 1 phần tiêu đề (_head_) và nhiều phần hàng (trường One2Many)."
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__is_extend
+msgid "Extend"
+msgstr "Mở rộng"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template_export__is_extend
+msgid "Extend a blank row after filling each record, to extend the footer"
+msgstr ""
+"Mở rộng một hàng trống sau khi điền vào mỗi bản ghi, để mở rộng chân trang"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__field_name
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__field_name
+msgid "Field"
+msgstr "Trường"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__field_cond
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__field_cond
+msgid "Field Cond."
+msgstr "Điều kiện"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__data
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_report__data
+msgid "File"
+msgstr "Tài liệu"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "File \"%(fname)s\" not found in template, %(name)s."
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__datas
+msgid "File Content"
+msgstr "Nội dung tập tin"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__name
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_report__name
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__fname
+msgid "File Name"
+msgstr "Tên tập tin"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Following are more explaination on each column:"
+msgstr "Sau đây là giải thích nhiều hơn trên mỗi cột:"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"Following show very simple example of the dictionary construct.\n"
+"                                    Normally, this will be within templates.xml file within addons."
+msgstr ""
+"Sau đây cho thấy ví dụ rất đơn giản về cấu trúc từ điển.\n"
+"                                    Thông thường, điều này sẽ nằm trong tệp mẫu.xml trong addons."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"For code block <code>$</code>\n"
+"                                <code>{...}</code> and <code>#?...?</code>, following object are available,"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"For code block <code>$</code>\n"
+"                                <code>{...}</code>, following object are available,"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_report_xlsx_wizard
+msgid "Generic Report Wizard, used with template reporting option"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields.selection,name:udoo_excel.selection__export_xlsx_wizard__state__get
+#: model:ir.model.fields.selection,name:udoo_excel.selection__import_xlsx_wizard__state__get
+#: model:ir.model.fields.selection,name:udoo_excel.selection__report_crm_lead__state__get
+#: model:ir.model.fields.selection,name:udoo_excel.selection__report_sale_order__state__get
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_report__state__get
+msgid "Get"
+msgstr "Chọn"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.export_xlsx_wizard
+msgid "Get Import Template"
+msgstr "Chọn mẫu nhập"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__gname
+msgid "Group Name"
+msgstr "Tên nhóm"
+
+#. module: udoo_excel
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_export__section_type__head
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_import__section_type__head
+msgid "Head"
+msgstr "Tiêu đề"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Help with Export Instruction"
+msgstr "Trợ giúp với hướng dẫn xuất"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Help with Import Instruction"
+msgstr "Trợ giúp với hướng dẫn nhập"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.export_xlsx_wizard
+msgid "Here is the exported file:"
+msgstr "Đây là tệp đã xuất:"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__id
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__id
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__id
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__id
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__id
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__id
+msgid "ID"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template_export__row_field
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template_import__row_field
+msgid "If section type is row, this field is required"
+msgstr "Nếu loại phần là hàng, trường này được yêu cầu"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#, python-format
+msgid ""
+"IllegalCharacterError\n"
+"Some exporting data contain special character\n"
+"%s"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__import_ids
+#: model_terms:ir.ui.view,arch_db:udoo_excel.import_xlsx_wizard
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Import"
+msgstr "Nhập"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__import_action_id
+msgid "Import Action"
+msgstr "Hành động nhập"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "Import Excel"
+msgstr "Nhập Excel"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__import_file
+msgid "Import File (*.xlsx)"
+msgstr "Nhập tệp (*.xlsx)"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.import_xlsx_wizard
+msgid "Import File Template"
+msgstr "Nhập mẫu tệp"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__attachment_ids
+msgid "Import File(s) (*.xlsx)"
+msgstr "Nhập (các) tệp (*.xlsx)"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"Import Instruction is how to get data from excel sheet and write them to an active record.\n"
+"                                  For example, user create a sales order document, and want to import order lines from excel.\n"
+"                                  In reverse direction to exporting, data from excel's cells will be mapped to record fields during import.\n"
+"                                  Cells can be mapped to record in header section (_HEAD_) and data table can be mapped to row section (one2many field, begins from specifed cells."
+msgstr ""
+"Nhập hướng dẫn là làm thế nào để lấy dữ liệu từ tờ Excel và viết chúng vào một bản ghi hoạt động.\n"
+"                                  Ví dụ: người dùng tạo tài liệu đặt hàng bán hàng và muốn nhập các dòng đơn hàng từ Excel.\n"
+"                                  Theo hướng ngược lại để xuất, dữ liệu từ các ô của Excel sẽ được ánh xạ tới các trường ghi trong quá trình nhập.\n"
+"                                  Các ô có thể được ánh xạ để ghi trong phần tiêu đề (_head_) và bảng dữ liệu có thể được ánh xạ vào phần hàng (trường One2Many, bắt đầu từ các ô được xác định."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.import_xlsx_wizard
+msgid "Import Successful!"
+msgstr "Nhập thành công!"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"In header section part, map data fields (e.g., number, partner_id.name) into"
+" cells (e.g., B1, B2)."
+msgstr ""
+"Trong phần phần tiêu đề, các trường dữ liệu bản đồ (ví dụ: số, Đối "
+"tác_id.name) thành các ô (ví dụ: B1, B2)."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"In header section, map cells (e.g., B1, B2) into data fields (e.g., number, "
+"partner_id)."
+msgstr ""
+"Trong phần tiêu đề, các ô bản đồ (ví dụ: B1, B2) vào các trường dữ liệu (ví "
+"dụ: số, Đối tác_id)."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"In row section, data list will be rolled out from one2many row field (e.g., "
+"order_line), and map data field (i.e., product_id.name, uom_id.name, qty) "
+"into the first row cells to start rolling (e.g., A6, B6, C6)."
+msgstr ""
+"Trong phần hàng, danh sách dữ liệu sẽ được tung ra từ trường One2Many Row "
+"(ví dụ: order_line) và trường Dữ liệu bản đồ (tức là, sản phẩm_id.name, "
+"uom_id.name, qty) vào các ô hàng đầu tiên để bắt đầu cuộn (ví dụ: A6, A6, "
+"B6, C6)."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid ""
+"In row section, data table from excel can be imported to one2many row field "
+"(e.g., order_line) by mapping cells on first row onwards (e.g., A6, B6, C6) "
+"to fields (e.g., product_id, uom_id, qty)"
+msgstr ""
+"Trong phần ROW, bảng dữ liệu từ Excel có thể được nhập vào trường Row "
+"One2Many (ví dụ: Order_line) bằng cách ánh xạ các ô trên hàng đầu tiên trở "
+"đi (ví dụ: A6, B6, C6) thành các trường (ví dụ: Product_id, UOM_ID, QTY)"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Input Instruction (Dict.)"
+msgstr "Chỉ dẫn đầu vào (Dict.)"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__instruction
+msgid "Instruction"
+msgstr "Chỉ dẫn"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__input_instruction
+msgid "Instruction (Input)"
+msgstr "Chỉ dẫn (đầu vào)"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__instruction
+msgid "Instruction on how to import/export, prepared by system."
+msgstr "Chỉ dẫn về cách nhập/xuất, được chuẩn bị bởi hệ thống."
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid "Invalid declaration, %s has no valid field type"
+msgstr "Khai báo không hợp lệ, %s không có loại trường hợp lệ"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid "Invalid file style, only .xls or .xlsx file allowed"
+msgstr "Kiểu tệp không hợp lệ, chỉ cho phép tệp .xls hoặc .xlsx"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/common.py:0
+#, python-format
+msgid "Invalid style type %s"
+msgstr "Kiểu định dạng không hợp lệ %s"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/common.py:0
+#, python-format
+msgid "Invalid value %(value)s for style type %(key)s"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#, python-format
+msgid ""
+"Key Error\n"
+"%s"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__write_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__write_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__write_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__write_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__write_uid
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__write_date
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__write_date
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__write_date
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__write_date
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__write_date
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Link:"
+msgstr "Đường dẫn:"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__gname
+msgid ""
+"Multiple template of same model, can belong to same group,\n"
+"result in multiple template selection"
+msgstr ""
+"Nhiều mẫu của cùng một mô hình, có thể thuộc cùng một nhóm,\n"
+"dẫn đến nhiều lựa chọn mẫu"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__no_delete
+msgid "No Delete"
+msgstr "Không xóa"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid "No data_dict['__IMPORT__'] in template %s"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_template.py:0
+#, python-format
+msgid "No file content!"
+msgstr "Không có nội dung tập tin!"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_report.py:0
+#: code:addons/udoo_excel/wizard/export_xlsx_wizard.py:0
+#, python-format
+msgid "No file in %s"
+msgstr "Không có tệp nào trong %s"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_report.py:0
+#: code:addons/udoo_excel/wizard/export_xlsx_wizard.py:0
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "No template found"
+msgstr "Không tìm thấy mẫu nào"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#, python-format
+msgid "Not enough worksheets"
+msgstr "Không đủ bảng tính"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/ir_report.py:0
+#, python-format
+msgid "Only one id is allowed for udoo_excel"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__redirect_action
+msgid "Optional action, redirection after finish import operation"
+msgstr "Hành động tùy chọn, chuyển hướng sau khi hoàn thành hoạt động nhập"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__csv_extension
+msgid "Optional for CSV, default is .csv"
+msgstr "Tùy chọn cho CSV, mặc định là .csv"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__csv_delimiter
+msgid "Optional for CSV, default is comma."
+msgstr "Tùy chọn cho CSV, mặc định là dấu phẩy."
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__csv_quote
+msgid "Optional for CSV, default is full quoting."
+msgstr "Tùy chọn cho CSV, mặc định là trích dẫn đầy đủ."
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/export_xlsx_wizard.py:0
+#, python-format
+msgid "Output Results"
+msgstr "Kết quả xuất"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "Please select Excel file to import"
+msgstr "Vui lòng chọn file Excel để nhập"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/common.py:0
+#: code:addons/udoo_excel/models/common.py:0
+#, python-format
+msgid "Position %s is not valid"
+msgstr "Vị trí %s không hợp lệ"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__post_import_hook
+msgid "Post Import Function Hook"
+msgstr ""
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Post Import Hook"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid ""
+"Post import operation error\n"
+"%s"
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#, python-format
+msgid "Records in %s exceed max records allowed"
+msgstr "Bản ghi trong %s vượt quá số bản ghi tối đa cho phép"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Remove Export Action"
+msgstr "Loại bỏ hành động xuất"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Remove Import Action"
+msgstr "Xóa hành động nhập"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Remove Report Menu"
+msgstr "Xóa menu báo cáo"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_ir_actions_report
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__report_action_id
+msgid "Report Action"
+msgstr "Hành động báo cáo"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.xlsx_report_view
+msgid "Report File Is Ready To Download!"
+msgstr "Tệp báo cáo đã sẵn sàng để tải xuống!"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__report_menu_id
+msgid "Report Menu"
+msgstr "Menu báo cáo"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__result_model_id
+msgid "Report Model"
+msgstr "Mô hình báo cáo"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_report.py:0
+#, python-format
+msgid "Report Results"
+msgstr "Kết quả báo cáo"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_ir_actions_report__report_type
+msgid "Report Type"
+msgstr "Loại báo cáo"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__res_model
+msgid "Res Model"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__res_id
+msgid "Resource ID"
+msgstr "ID tài nguyên"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__res_ids
+msgid "Resource IDs"
+msgstr "ID tài nguyên"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__res_model
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__res_model
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__res_model
+msgid "Resource Model"
+msgstr "Mô hình"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__result_field
+msgid "Result Field"
+msgstr "Trường kết quả"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__redirect_action
+msgid "Return Action"
+msgstr "Hành động trả về"
+
+#. module: udoo_excel
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_export__section_type__row
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_import__section_type__row
+msgid "Row"
+msgstr "Dòng"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__row_field
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__row_field
+msgid "Row Field"
+msgstr "Nhóm dữ liệu"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__datas
+msgid "Sample"
+msgstr "Ví dụ"
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "Sample Input Instruction as Dictionary"
+msgstr "Mẫu hướng dẫn đầu vào làm từ điển"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_report_xlsx_wizard__domain
+msgid "Search Criterias"
+msgstr "Tiêu chí tìm kiếm"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__section_type
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__section_type
+msgid "Section Type"
+msgstr "Loại phần"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__sequence
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__sequence
+msgid "Sequence"
+msgstr "Trình tự"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "Set Templates"
+msgstr "Chọn mẫu"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__sheet
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__sheet
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_export__section_type__sheet
+#: model:ir.model.fields.selection,name:udoo_excel.selection__xlsx_template_import__section_type__sheet
+msgid "Sheet"
+msgstr "Trang tính"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid "Sheet %s not found"
+msgstr "Không tìm thấy trang tính %s"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__show_instruction
+msgid "Show Output"
+msgstr "Hiển thị đầu ra"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__state
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__state
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_report__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__style_cond
+msgid "Style w/Cond."
+msgstr "Định dạng/điều kiện."
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__is_sum
+msgid "Sum"
+msgstr "Tổng"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_export_xlsx_wizard__template_id
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__template_id
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_report__template_id
+msgid "Template"
+msgstr "Bản mẫu"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/ir_report.py:0
+#, python-format
+msgid "Template %(report_name)s on model %(model)s is not unique!"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_import_xlsx_wizard__fname
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template__name
+msgid "Template Name"
+msgstr "Tên mẫu"
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/common.py:0
+#, python-format
+msgid ""
+"Template with CSV Quoting = False, data must not contain the same char as "
+"delimiter -> \"%s\""
+msgstr ""
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_export.py:0
+#: code:addons/udoo_excel/models/xlsx_import.py:0
+#, python-format
+msgid "Template's model mismatch"
+msgstr "Mô hình của mẫu không phù hợp"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__res_model
+msgid "The database object this attachment will be attached to."
+msgstr "Đối tượng cơ sở dữ liệu tệp đính kèm này sẽ được đính kèm."
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/models/xlsx_template.py:0
+#, python-format
+msgid "The selected redirect action is not for model %s"
+msgstr "Hành động chuyển hướng đã chọn không dành cho mô hình %s"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_ir_actions_report__report_type
+msgid ""
+"The type of the report that will be rendered, each one having its own "
+"rendering method. HTML means the report will be opened directly in your "
+"browser PDF means the report will be rendered using Wkhtmltopdf and "
+"downloaded by the user."
+msgstr ""
+"Loại báo cáo sẽ được xuất, mỗi loại có phương thức xuất riêng. HTML có nghĩa"
+" là báo cáo sẽ được mở trực tiếp trong trình duyệt của bạn, PDF có nghĩa là "
+"báo cáo sẽ được xuất ra bằng Wkhtmltopdf và được người dùng tải xuống."
+
+#. module: udoo_excel
+#. odoo-python
+#: code:addons/udoo_excel/wizard/import_xlsx_wizard.py:0
+#, python-format
+msgid "This import action is not usable in this document context"
+msgstr "Hành động nhập này không thể sử dụng được trong ngữ cảnh tài liệu này"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__show_instruction
+msgid ""
+"This is the computed instruction based on tab Import/Export,\n"
+"to be used by xlsx import/export engine"
+msgstr ""
+"Đây là hướng dẫn được tính toán dựa trên nhập/xuất tab,\n"
+"được sử dụng bởi công cụ nhập/nhập XLSX"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__input_instruction
+msgid "This is used to construct instruction in tab Import/Export"
+msgstr "Điều này được sử dụng để xây dựng hướng dẫn trong nhập/xuất tab"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__use_report_wizard
+msgid "Use common report wizard model, instead of create specific model"
+msgstr ""
+"Sử dụng mô hình trình hướng dẫn báo cáo chung, thay vì tạo mô hình cụ thể"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_xlsx_template__result_model_id
+msgid "When use commone wizard, choose the result model"
+msgstr ""
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_export_xlsx_wizard
+msgid "Wizard for exporting excel"
+msgstr "Trình xuất Excel"
+
+#. module: udoo_excel
+#: model:ir.model,name:udoo_excel.model_import_xlsx_wizard
+msgid "Wizard for importing excel"
+msgstr "Trình nhập Excel"
+
+#. module: udoo_excel
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_export__template_id
+#: model:ir.model.fields,field_description:udoo_excel.field_xlsx_template_import__template_id
+#: model_terms:ir.ui.view,arch_db:udoo_excel.view_xlsx_template_form
+msgid "XLSX Template"
+msgstr "Mẫu XLSX"
+
+#. module: udoo_excel
+#: model:ir.model.fields,help:udoo_excel.field_import_xlsx_wizard__attachment_ids
+msgid "You can select multiple files to import."
+msgstr "Bạn có thể chọn nhiều tệp để nhập."
+
+#. module: udoo_excel
+#: model_terms:ir.ui.view,arch_db:udoo_excel.import_xlsx_wizard
+msgid "⇒ Get Sample Import Template"
+msgstr "⇒ Lấy tệp mẫu nhập dữ liệu"
