@@ -1,0 +1,39 @@
+// LIST SELF TITLE
+.th-self {
+    tr:not(.o_handle_cell) {
+        >th:nth-of-type(1)>div>span {
+            font-weight: 600;
+            color: #009BC0;
+
+            &:before {
+                content: "";
+                display: inline-flex;
+                height: 6px;
+                width: 6px;
+                border-radius: $o-border-radius;
+                background-color: rgba(complement(#009BC0), 0.6);
+                margin: auto 0;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    tr:has(.o_handle_cell) {
+        >th:nth-of-type(2)>div>span {
+            margin-left: -26px;
+            font-weight: 600;
+            color: #009BC0;
+
+            &:before {
+                content: "";
+                display: inline-flex;
+                height: 6px;
+                width: 6px;
+                border-radius: $o-border-radius;
+                background-color: rgba(complement(#009BC0), 0.6);
+                margin: auto 0;
+                margin-right: 10px;
+            }
+        }
+    }
+}

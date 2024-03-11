@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.ListView.Buttons" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="after">
+            <button t-if="props.context and props.context.uslot_action" type="button" class="btn btn-secondary" t-on-click="openExtraOptions">
+                <t t-if="props.context.uslot_title" t-out="props.context.uslot_title"/>
+                <t t-else="" t-out="'More Options'"/>
+            </button>
+        </xpath>
+    </t>
+
+</templates>

@@ -6,7 +6,7 @@
 {
     'name': 'Audit Logs',
     'category': 'Tools',
-    'version': '2.2',
+    'version': '0.2',
     'license': 'AGPL-3',
     'author': 'Jupetern,Ecosoft,Odoo Community Association (OCA)',
     'website': 'https://github.com/jupetern/udoo/wiki/Audit-Logs',

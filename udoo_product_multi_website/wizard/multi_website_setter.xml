@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_listing_setter" model="ir.ui.view">
+        <field name="name">view_product_listing_setter</field>
+        <field name="model">multi.website.setter</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="alert border-secondary text-dark" role="status" invisible="not context.get('set_product')">
+                    If no website is set, all selected products will be available on all websites.
+                    Please note that this is not related to the published status of the product.
+                </div>
+                <div class="alert border-secondary text-dark" role="status" invisible="not context.get('set_category')">
+                    If no website is set, all selected categories will be available on all websites.
+                </div>
+                <group>
+                    <group>
+                        <field name="website_ids" widget="many2many_checkboxes" placeholder="Select options..."/>
+                    </group>
+                    <group>
+                        <field name="product_ids" class="th-self" nolabel="1" colspan="2" domain="[('sale_ok', '=', True)]" invisible="not context.get('set_product')">
+                            <tree create="false" no_open="True">
+                                <field name="display_name" string="Products"/>
+                                <field name="is_published" string="Published" widget="boolean_toggle" options="{'autosave': False}"/>
+                            </tree>
+                        </field>
+                        <field name="categories_ids" class="th-self" nolabel="1" colspan="2" invisible="not context.get('set_category')">
+                            <tree create="false" no_open="True">
+                                <field name="display_name" string="Categories"/>
+                            </tree>
+                        </field>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Apply" name="action_apply" type="object" class="oe_highlight" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                    <button string="Check All" name="action_apply_all" type="object" class="btn-secondary ms-auto"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_update_product_available_website" model="ir.actions.server">
+        <field name="name">Update Available Websites</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">action = records.open_update_available_website()</field>
+        <field name="groups_id" eval="[(4, ref('website.group_website_designer'))]"/>
+    </record>
+
+    <record id="action_update_category_available_website" model="ir.actions.server">
+        <field name="name">Update Available Websites</field>
+        <field name="model_id" ref="website_sale.model_product_public_category"/>
+        <field name="binding_model_id" ref="website_sale.model_product_public_category"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">action = records.open_update_available_website()</field>
+        <field name="groups_id" eval="[(4, ref('website.group_website_designer'))]"/>
+    </record>
+</odoo>
