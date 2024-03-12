@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="edit_menu_access_search_ih" model="ir.ui.view">
+        <field name="name">ir.ui.menu.search.ih</field>
+        <field name="model">ir.ui.menu</field>
+        <field name="inherit_id" ref="base.edit_menu_access_search"/>
+        <field name="arch" type="xml">
+            <filter name="inactive" position="before">
+                <filter string="Apps" name="app" domain="[('parent_id', '=', False)]"/>
+            </filter>
+            <filter name="inactive" position="after">
+                <group col="8" colspan="4" expand="0" string="Group By">
+                    <filter string="Parent" name="parent" context="{'group_by':'parent_id'}"/>
+                </group>
+            </filter>
+        </field>
+    </record>
+
+    <record id="app_view_model_data_search" model="ir.ui.view">
+        <field name="name">app.ir.model.data.search</field>
+        <field name="model">ir.model.data</field>
+        <field name="inherit_id" ref="base.view_model_data_search"/>
+        <field name="arch" type="xml">
+            <filter name="updatable" position="after">
+                <filter string="No Updatable" name="noupdatable" domain="[('noupdate', '=', True)]"/>
+            </filter>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,139 @@
+// == List
+// ============================================================================
+
+.th-self {
+    tr:not(.o_handle_cell) {
+        >th:nth-of-type(1)>div>span {
+            font-weight: $o-list-head-title-weight;
+            color: $o-list-head-title-color;
+
+            &:before {
+                content: "";
+                display: inline-flex;
+                height: 6px;
+                width: 6px;
+                border-radius: $o-border-radius;
+                background-color: rgba(complement($o-list-head-title-color), 0.6);
+                margin: auto 0;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    tr:has(.o_handle_cell) {
+        >th:nth-of-type(2)>div>span {
+            margin-left: -26px;
+            font-weight: $o-list-head-title-weight;
+            color: $o-list-head-title-color;
+
+            &:before {
+                content: "";
+                display: inline-flex;
+                height: 6px;
+                width: 6px;
+                border-radius: $o-border-radius;
+                background-color: rgba(complement($o-list-head-title-color), 0.6);
+                margin: auto 0;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+// == Calendar
+// ============================================================================
+
+.o_calendar_header {
+    text-transform: capitalize;
+}
+
+.fc-month-container {
+    h2 {
+        text-transform: capitalize;
+    }
+}
+
+
+// == UX Style
+// ============================================================================
+
+// = Soft Background
+.bg-soft-primary {
+    background-color: $bg-soft-primary;
+}
+
+.bg-soft-secondary {
+    background-color: $bg-soft-secondary;
+}
+
+.bg-soft-success {
+    background-color: $bg-soft-success;
+}
+
+.bg-soft-info {
+    background-color: $bg-soft-info;
+}
+
+.bg-soft-warning {
+    background-color: $bg-soft-warning;
+}
+
+.bg-soft-danger {
+    background-color: $bg-soft-danger;
+}
+
+.bg-soft-light {
+    background-color: $bg-soft-light;
+}
+
+.bg-soft-dark {
+    background-color: $bg-soft-dark;
+}
+
+// = Date Fields
+.mx-period {
+    width: min-content !important;
+
+    input {
+        min-width: 85px !important;
+        text-align: center !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+// = Font Size
+.fs-7 {
+    font-size: 0.75rem !important;
+}
+
+.fw-sbold {
+    font-weight: 600;
+}
+
+// = Space
+.cg-32 {
+    column-gap: 32px;
+}
+
+
+// == Others
+// ============================================================================
+
+// = Modules
+.o_menu_brand,
+.o_nav_entry,
+.o_menu_sections div button {
+    text-transform: capitalize;
+}
+
+// = Modal with Notebook
+.modal-fs .modal-body .o_form_sheet_bg {
+    max-width: unset !important;
+}
+
+.modal-dialog-centered:has(.o_notebook) {
+    align-items: unset;
+}

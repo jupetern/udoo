@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.CogMenu" t-inherit-mode="extension">
+        <xpath expr="//DropdownItem[@t-foreach='printItems']//t[@t-esc='item.description']" position="before">
+            <i t-if="item.icon" t-att-class="item.icon" class="me-2"/>
+        </xpath>
+    </t>
+
+</templates>
