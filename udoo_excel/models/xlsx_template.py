@@ -26,7 +26,11 @@ class XLSXTemplate(models.Model):
     _description = 'Excel template file and instruction'
     _order = 'name'
 
-    name = fields.Char(string='Template Name', required=True)
+    name = fields.Char(
+        string='Template Name',
+        translate=True,
+        required=True,
+    )
     res_model = fields.Char(
         string='Resource Model',
         help='The database object this attachment will be attached to.',
@@ -71,11 +75,16 @@ class XLSXTemplate(models.Model):
         default=True,
         help='Optional for CSV, default is full quoting.',
     )
-    export_ids = fields.One2many(comodel_name='xlsx.template.export', inverse_name='template_id')
-    import_ids = fields.One2many(comodel_name='xlsx.template.import', inverse_name='template_id')
+    export_ids = fields.One2many(
+        comodel_name='xlsx.template.export', inverse_name='template_id'
+    )
+    import_ids = fields.One2many(
+        comodel_name='xlsx.template.import', inverse_name='template_id'
+    )
     post_import_hook = fields.Char(
         string='Post Import Function Hook',
-        help='Call a function after successful import, i.e.,\n' '${object.post_import_do_something()}',
+        help='Call a function after successful import, i.e.,\n'
+        '${object.post_import_do_something()}',
     )
     show_instruction = fields.Boolean(
         string='Show Output',
@@ -533,7 +542,8 @@ class XLSXTemplateImport(models.Model):
     row_field = fields.Char(help='If section type is row, this field is required')
     no_delete = fields.Boolean(
         default=False,
-        help='By default, all rows will be deleted before import.\n' 'Select No Delete, otherwise',
+        help='By default, all rows will be deleted before import.\n'
+        'Select No Delete, otherwise',
     )
     excel_cell = fields.Char(string='Cell')
     field_name = fields.Char(string='Field')

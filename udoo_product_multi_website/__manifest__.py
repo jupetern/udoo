@@ -3,10 +3,10 @@
 
 {
     'name': 'Multiple Website Product',
-    'category': 'Tools',
+    'category': 'Website/Website',
     'summary': 'Managing products across multiple websites',
     'version': '1.0',
-    'license': 'LGPL-3',
+    'license': 'AGPL-3',
     'author': 'Jupetern',
     'website': 'https://github.com/jupetern',
     'images': ['static/description/banner.png'],

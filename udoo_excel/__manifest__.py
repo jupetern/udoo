@@ -6,13 +6,13 @@
 {
     'name': 'Dynamic Excel Engine',
     'category': 'Tools',
-    'summary': 'Dynamic Excel import report generation engine. Easy create excel report, Global XLS Report, Export Excel, Export XLS Data, Excel Custom Template, XLS Custom Template, Excel Export, Excel Output, XLS Export, Export XLS, XLSX Export, Export Special Fields Odoo.',
+    'summary': 'Dynamic Excel import export report generation engine.',
     'version': '1.1',
     'license': 'AGPL-3',
     'author': 'Jupetern,Ecosoft,Odoo Community Association (OCA)',
     'website': 'https://github.com/jupetern/udoo/wiki/Dynamic-Excel-Engine',
     'images': ['static/description/banner.png'],
-    'depends': ['web'],
+    'depends': ['udoo_base'],
     'external_dependencies': {'python': ['openpyxl']},
     'data': [
         'security/ir.model.access.csv',
