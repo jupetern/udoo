@@ -9,7 +9,7 @@
     'version': '1.1',
     'license': 'AGPL-3',
     'author': 'Jupetern,Ecosoft,Odoo Community Association (OCA)',
-    'website': 'https://github.com/jupetern/udoo/wiki/Dynamic-Excel-Engine',
+    'website': 'https://github.com/jupetern',
     'images': ['static/description/banner.png'],
     'depends': [
         'udoo_excel',

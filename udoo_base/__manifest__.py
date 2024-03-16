@@ -33,5 +33,12 @@
             ),
             'udoo_base/static/src/**/*',
         ],
+        'web.assets_frontend': [
+            (
+                'after',
+                'web/static/src/scss/fontawesome_overridden.scss',
+                'udoo_base/static/src/scss/overridden_icons.scss',
+            ),
+        ],
     },
 }

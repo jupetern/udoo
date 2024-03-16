@@ -5,6 +5,7 @@ import { useService } from '@web/core/utils/hooks';
 import { PivotRenderer } from '@web/views/pivot/pivot_renderer';
 
 patch(PivotRenderer.prototype, {
+
     setup() {
         super.setup();
         this.notification = useService('notification');

@@ -5,6 +5,7 @@ import { useService } from '@web/core/utils/hooks';
 import { ListController } from '@web/views/list/list_controller';
 
 patch(ListController.prototype, {
+
     setup() {
         super.setup();
         this.notification = useService('notification');

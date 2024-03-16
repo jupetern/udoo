@@ -3,7 +3,7 @@
 
 {
     'name': 'Wizard Filter Binding',
-    'category': 'Tools',
+    'category': 'Hidden/Tools',
     'version': '1.0',
     'license': 'AGPL-3',
     'author': 'Jupetern',

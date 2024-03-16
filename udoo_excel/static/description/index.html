@@ -7,76 +7,195 @@
 </head>
 
 <body>
-    <section class="pt-3">
-        <p>This module helps developers manage Excel import, export and reporting in Odoo easily.</p>
-        <p>For demo, please install <a href="https://apps.odoo.com/apps/modules/17.0/udoo_excel_demo/">Dynamic Excel
-                Engine Demo</a></p>
-        <p><b style="color: #0e616e;">Highlights</b></p>
-        <p><b><small>⤳ Effortless Setup</small></b><br>
-            Build menus, actions, and views for Excel integration without rewrite from scratch.
-        </p>
-        <p><b><small>⤳ Familiar Design</small></b><br>
-            Create custom Excel templates using the standard Excel application.
-        </p>
-        <p><b><small>⤳ Intuitive Data Mapping</small></b><br>
-            Easily define data placement with simple instructions or the Odoo UI.
-        </p>
-        <p><b><small>⤳ Automatic Generation</small></b><br>
-            Odoo generates the final Excel file based on your instructions.
-        </p>
-        <p><b style="color: #0e616e;">Dynamic Capabilities</b></p>
-        <p><b><small>Deeply Integration</small></b><br>
-            Your module can seamlessly integrate with existing Odoo models, allowing users to select the desired
-            model and export relevant data directly from within Odoo.<br>
-            This simplifies the process of selecting data for export and ensures data consistency.
-        </p>
-        <p><b><small>Customizable Templates</small></b><br>
-            Allow to create and customize Excel templates according to their specific requirements, including
-            formatting, layout, and formulas.
-        </p>
-        <p><b><small>Dynamic Data Mapping</small></b><br>
-            Provide a user-friendly interface to map Odoo model fields to corresponding columns in the Excel
-            template.<br>
-            This allows to define which data should be exported and where it should appear in the Excel file.
-        </p>
-        <p><b><small>Data Transformation and Formatting</small></b><br>
-            Enable to apply transformations and formatting to the exported data, such as converting dates to a
-            specific format, adding calculations, or applying conditional formatting.
-        </p>
-        <p><b><small>Multiple Sheet Support</small></b><br>
-            Allow to export data into multiple sheets within a single Excel file, organizing the exported data
-            based on different criteria or models.
-        </p>
-        <p><b><small>Localization and Language Support</small></b><br>
-            Ensure compatibility with different regional settings and languages, including support for
-            localization-specific formats, currencies, and date formats.
-        </p>
-        <p><b><small>Error Handling and Validation</small></b><br>
-            Implement robust error handling and validation mechanisms to handle potential issues during the export
-            process, such as missing or invalid data, ensuring data integrity in the exported Excel files.
-        </p>
-    </section>
-
-    <!-- SUPPORTS -->
+    <!-- INTRO -->
     <!-- ============================================================================================================= -->
 
-    <div class="overflow-hidden mb-5 px-4 py-2 shadow-sm bg-white">
-        <div class="row">
-            <div class="col-md-8 text-center text-md-left my-3">
-                <h3 class="text-black h3 mb-2">Technical Help, Queries &amp; Support</h3>
-                <p class="m-0" style="color:#5c6b73">Please feel free to contact for any suggestion, issue &amp; queries
-                </p>
-            </div>
-            <div class="col-md-4 text-center text-md-right my-3">
-                <a class="small fw-bold" target="_blank" href="mailto:jupetern24@gmail.com"
-                    style="padding:12px 30px 12px 20px; display:inline-block; background-color:#00c4b4; color:#fff; border-radius:5px; font-weight:400; font-size:16px">
-                    <i class="fa fa-envelope me-2"></i> Support</a>
-                <a class="small fw-bold" target="_blank" href="skype:live:jupetern?chat"
-                    style="padding:12px 26px; display:inline-block; background-color:#00AFF0; color:#fff; border-radius:5px; margin:14px 0px; font-weight:400">
-                    <i Class="fa fa-lg fa-skype me-2"></i> Skype Us</a>
+    <div class="alert alert-success pt-3 pb-1" style="border-radius:0px">
+        <h5 style="color:#1c7254"><span class="fa fa-book me-2"></span> Udoo Documentation</h5>
+        <p style="color:#1c7254">https://github.com/jupetern/udoo/wiki/Dynamic-Excel-Engine</p>
+    </div>
+
+    <!-- FEATURES -->
+    <!-- ============================================================================================================= -->
+
+    <div class="text-center pt-3 pb-4">
+        <h2 class="h1 mb-3">The Most Powerful Features</h2>
+        <p class="lead font-weight-normal">This module helps developers manage Excel import, export and reporting in
+            Odoo easily.
+        </p>
+        <p>For demo, please install
+            <a href="https://apps.odoo.com/apps/modules/17.0/udoo_excel_demo/">
+                Dynamic Excel Engine Demo
+            </a>
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Deeply Integration</span>
+                    </div>
+                    <div class="mt-3">
+                        Enable seamless integration with existing Odoo models, facilitating effortless selection of the
+                        desired model and export of relevant data directly from within Odoo. This streamlined process
+                        simplifies data selection for export and ensures consistency in the exported data.
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Dynamic Data Mapping</span>
+                    </div>
+                    <div class="mt-3">
+                        Offer an intuitive interface to map Odoo model fields with corresponding columns in the Excel
+                        template. This functionality empowers users to define the data to be exported and its placement
+                        within the Excel file.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Data Transformation and Formatting</span>
+                    </div>
+                    <div class="mt-3">
+                        Facilitate the application of transformations and formatting to the exported data, allowing for
+                        tasks such as converting dates to a specific format, adding calculations, or applying
+                        conditional formatting.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Customizable Templates</span>
+                    </div>
+                    <div class="mt-3">
+                        Facilitate the creation and customization of Excel templates based on specific requirements,
+                        encompassing various aspects such as formatting, layout, and formulas. This functionality
+                        empowers users to tailor the templates to their specific needs and preferences.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Multiple Sheet Support</span>
+                    </div>
+                    <div class="mt-3">
+                        Enable the export of data into multiple sheets within a single Excel file, providing the
+                        capability to organize the exported data based on various criteria or models.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Localization and Language Support</span>
+                    </div>
+                    <div class="mt-3">
+                        Ensure compatibility with different regional settings and languages, including support for
+                        localization-specific formats, currencies, and date formats.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 my-3">
+            <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="media">
+                    <div class="border-radius-50" style="background-color:#f1f1f1; padding:8px">
+                        <i class="fa fa-circle-o me-2" style="color: #12a572;"></i>
+                        <span class="fw-bold" style="color: #353535;">Error Handling and Validation</span>
+                    </div>
+                    <div class="mt-3">
+                        Implement robust error handling and validation mechanisms to handle potential issues during the
+                        export process, such as missing or invalid data, ensuring data integrity in the exported Excel
+                        files.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACCESSORIES -->
+        <!-- ============================================================================================================= -->
+
+        <div class="text-center pt-5">
+            <h1 class="mb-5 pt-3">You May Also Like!</h1>
+        </div>
+        <div class="row mb-5">
+            <div class="col-sm-6 my-3">
+                <div class="shadow-sm card">
+                    <div>
+                        <a href="https://apps.odoo.com/apps/modules/17.0/udoo_product_multi_website/">
+                            <img class="card-img-top img-fluid"
+                                src="//apps.odoocdn.com/apps/assets/17.0/udoo_product_multi_website/banner.png">
+                        </a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <h5 class="m-0"><a class="text-dark"
+                                href="https://apps.odoo.com/apps/modules/17.0/udoo_product_multi_website/">
+                                Multiple Website Product</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 my-3">
+                <div class="shadow-sm card">
+                    <div>
+                        <a href="https://apps.odoo.com/apps/themes/17.0/udoo_om_ux/">
+                            <img class="card-img-top img-fluid"
+                                src="//apps.odoocdn.com/apps/assets/17.0/udoo_om_ux/banner_hoz.png">
+                        </a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <h5 class="m-0"><a class="text-dark" href="https://apps.odoo.com/apps/themes/17.0/udoo_om_ux/">
+                                Om Backend Theme</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUPPORTS -->
+        <!-- ============================================================================================================= -->
+
+        <div class="overflow-hidden mb-5 px-4 py-2 shadow-sm bg-white">
+            <div class="row">
+                <div class="col-md-8 text-center text-md-left my-3">
+                    <h3 class="text-black h3 mb-2">Technical Help, Queries &amp; Support</h3>
+                    <p class="m-0" style="color:#5c6b73">Please feel free to contact for any suggestion, issue &amp;
+                        queries
+                    </p>
+                </div>
+                <div class="col-md-4 text-center text-md-right my-3">
+                    <a class="small fw-bold px-3 py-2 my-1" target="_blank" href="mailto:jupetern24@gmail.com"
+                        style="display:inline-block; width: 125px; background-color:#00c4b4; color:#fff; border-radius:3px;">
+                        <i class="fa fa-envelope me-2"></i> Support</a>
+                    <a class="small fw-bold px-3 py-2 my-1" target="_blank" href="skype:live:.cid.900001f0badbcc22?chat"
+                        style="display:inline-block; width: 125px; background-color:#00AFF0; color:#fff; border-radius:3px;">
+                        <i Class="fa fa-lg fa-skype me-2"></i> Skype Us</a>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
