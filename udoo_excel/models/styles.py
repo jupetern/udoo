@@ -30,6 +30,8 @@ class XLSXStyles(models.AbstractModel):
                 'arial_c': Font(name='Arial', size=10, color='000000', bold=False),
                 'arial_8': Font(name='Arial', size=8, bold=False),
                 'arial_8b': Font(name='Arial', size=8, bold=True),
+                'arial_9': Font(name='Arial', size=9, bold=False),
+                'arial_9b': Font(name='Arial', size=9, bold=True),
                 'tnr_10': Font(name='Times New Roman', size=10, bold=False),
                 'tnr_10b': Font(name='Times New Roman', size=10, bold=True),
             },

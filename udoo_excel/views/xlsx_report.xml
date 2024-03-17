@@ -27,7 +27,7 @@
                         </p>
                     </div>
                     <footer invisible="state !='choose'">
-                        <button name="report_xlsx" icon="fa-ri text-success ri-file-excel-2-line" title="Export Data into Excel" type="object" class="btn btn-secondary"/>
+                        <button name="report_xlsx" string="Export Excel" type="object" class="btn btn-secondary"/>
                         <button special="cancel" string="Cancel" type="object" class="btn btn-light"/>
                     </footer>
                     <footer invisible="state !='get'">
