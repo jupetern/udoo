@@ -14,6 +14,7 @@ from io import BytesIO
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 from odoo.tools.float_utils import float_compare
+from odoo.tools.misc import format_date, format_datetime
 from odoo.tools.safe_eval import safe_eval
 
 from . import common as co
@@ -40,9 +41,11 @@ class XLSXExport(models.AbstractModel):
     @api.model
     def get_eval_context(self, model, record, value):
         eval_context = {
-            'float_compare': float_compare,
-            'datetime': dt,
             'date': date,
+            'datetime': dt,
+            'format_date': format_date,
+            'format_datetime': format_datetime,
+            'float_compare': float_compare,
             'value': value,
             'object': record,
             'model': self.env[model],
