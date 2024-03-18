@@ -10,7 +10,7 @@
     'version': '1.1',
     'license': 'AGPL-3',
     'author': 'Jupetern,Ecosoft,Odoo Community Association (OCA)',
-    'website': 'https://github.com/jupetern',
+    'website': 'https://github.com/jupetern/udoo',
     'images': ['static/description/banner.png'],
     'depends': ['web'],
     'external_dependencies': {'python': ['openpyxl']},
