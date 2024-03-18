@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="report_stock_account_ms_wz" model="ir.ui.view">
+        <field name="name">report.stock.account.ms.wz</field>
+        <field name="model">report.stock.account</field>
+        <field name="inherit_id" ref="udoo_excel.xlsx_report_view" />
+        <field name="arch" type="xml">
+            <group name='criteria' position="inside">
+                <group name="main">
+                    <field name="date_from" widget="daterange" required="1" options="{'related_end_date': 'date_to'}"/>
+                    <field name="date_to" widget="daterange" required="1" options="{'related_start_date': 'date_from'}"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+    <record id="report_stock_account_wz" model="ir.ui.view">
+        <field name="name">report.stock.account.wz</field>
+        <field name="model">report.stock.account</field>
+        <field name="inherit_id" ref="udoo_excel.xlsx_report_view" />
+        <field name="arch" type="xml">
+            <group name='criteria' position="inside">
+                <group name="main">
+                    <field name="existing_wh_ids" invisible="1"/>
+                    <field name="view_by_location" invisible="1"/>
+                    <field name="date_from" widget="daterange" required="1" options="{'related_end_date': 'date_to'}"/>
+                    <field name="date_to" widget="daterange" required="1" options="{'related_start_date': 'date_from'}"/>
+                    <field name="warehouse_ids" placeholder="Leave blank to select all warehouses" widget="many2many_tags"/>
+                    <field name="location_ids" widget="many2many_tags" placeholder="Leave blank to select all location" invisible="not view_by_location" domain="['&amp;',('warehouse_id','in',existing_wh_ids),('usage','=','internal')]"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+    <record id="report_stock_account_xs_wz" model="ir.ui.view">
+        <field name="name">report.stock.account.ms.wz</field>
+        <field name="model">report.stock.account</field>
+        <field name="inherit_id" ref="udoo_excel.xlsx_report_view" />
+        <field name="arch" type="xml">
+            <group name='criteria' position="inside">
+                <group name="main">
+                    <field name="existing_wh_ids" invisible="1"/>
+                    <field name="view_by_location" invisible="1"/>
+                    <field name="warehouse_ids" placeholder="Leave blank to select all warehouses" widget="many2many_tags"/>
+                    <field name="location_ids" widget="many2many_tags" placeholder="Leave blank to select all location" invisible="not view_by_location" domain="['&amp;',('warehouse_id','in',existing_wh_ids),('usage','=','internal')]"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+</odoo>
