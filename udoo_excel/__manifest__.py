@@ -6,7 +6,7 @@
 {
     'name': 'Dynamic Excel Engine',
     'category': 'Tools',
-    'summary': 'Dynamic Excel import export report generation engine.',
+    'summary': 'Dynamic Excel import export report generation engine, base report xlsx, generate xlsx report, print excel, dynamic report, custom template, export xls data',
     'version': '1.1',
     'license': 'AGPL-3',
     'author': 'Jupetern,Ecosoft,Odoo Community Association (OCA)',
