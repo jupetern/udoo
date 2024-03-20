@@ -1,0 +1,175 @@
+// 
+.oi-view-list:before,
+.oi-view-kanban:before,
+.oi-view-pivot:before,
+.oi-archive:before,
+.fa-paperclip:before,
+.fa-th-large:before,
+.fa-line-chart:before,
+.fa-refresh:before,
+.fa-area-chart:before,
+.fa-share-alt:before,
+.fa-gear:before,
+.fa-folder:before,
+.fa-check-square-o:before,
+.fa-pencil-square-o:before,
+.fa-id-card-o:before,
+.fa-credit-card:before,
+.fa-star:before,
+.fa-truck:before,
+.fa-flask:before,
+.fa-exchange:before,
+.fa-list:before,
+.fa-list-ul:before,
+.fa-file-text-o:before,
+.fa-bars:before,
+.fa-signal:before,
+.fa-random:before,
+.fa-print:before,
+.fa-clone:before,
+.fa-building-o:before,
+.fa-building:before,
+.fa-users:before,
+.fa-user-o:before,
+.fa-cog:before,
+.fa-cogs:before,
+.fa-cubes:before,
+.fa-external-link:before,
+.oi-arrow-left:before,
+.oi-arrow-right:before,
+.fa-tasks:before,
+.fa-envelope:before,
+.fa-sign-in:before,
+.fa-sign-out:before,
+.fa-bug:before,
+.fa-th:before,
+.fa-check:before,
+.fa-times:before,
+.fa-calendar:before,
+.fa-clock-o:before,
+.fa-comment:before,
+.fa-comments:before,
+.fa-inbox:before,
+.fa-history:before,
+.fa-home:before,
+.fa-th-list:before,
+.fa-smile-o:before,
+.fa-map-marker:before,
+.fa-star-o:before,
+.fa-star:before {
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.oi-view-list:before { content: "\f44c"; }
+.oi-view-kanban:before { content: "\f44a"; }
+.oi-view-pivot:before { content: "\f46f"; }
+.oi-archive:before { content: "\ea48"; }
+.fa-paperclip:before { content: "\ea84"; }
+.fa-th-large:before { content: "\edde"; }
+.fa-line-chart:before { content: "\eeab"; }
+.fa-refresh:before { content: "\f33f"; }
+.fa-area-chart:before { content: "\ea98"; }
+.fa-share-alt:before { content: "\f0fe"; }
+.fa-gear:before { content: "\f0e3"; }
+.fa-folder:before { content: "\ed89"; }
+.fa-clone:before { content: "\ecd5"; }
+.fa-pencil-square-o:before { content: "\ec5c"; }
+.fa-id-card-o:before { content: "\f02d"; }
+.fa-check-square-o:before { content: "\f3e9"; }
+.fa-credit-card:before { content: "\ea90"; }
+.fa-star:before { content: "\f186"; }
+.fa-truck:before { content: "\f231"; }
+.fa-flask:before { content: "\ed3f"; }
+.fa-exchange:before { content: "\ea61"; }
+.fa-list:before { content: "\eeba"; }
+.fa-list-ul:before { content: "\f398"; }
+.fa-file-text-o:before { content: "\ed0f"; }
+.fa-bars:before { content: "\f3d1"; }
+.fa-signal:before { content: "\ea99"; }
+.fa-random:before { content: "\f46a"; }
+.fa-print:before { content: "\f029"; }
+.fa-building-o:before { content: "\eb09"; }
+.fa-building:before { content: "\eb08"; }
+.fa-users:before { content: "\f1ed"; }
+.fa-user-o:before { content: "\f256"; }
+.fa-cog:before { content: "\f404"; }
+.fa-cogs:before { content: "\ed76"; }
+.fa-cubes:before { content: "\f2f3"; }
+.fa-external-link:before { content: "\ecaf"; }
+.oi-arrow-left:before { content: "\ea60"; font-weight: 600; }
+.oi-arrow-right:before { content: "\ea6c"; font-weight: 600; }
+.fa-tasks:before { content: "\f1e8"; }
+.fa-envelope:before { content: "\eef6"; }
+.fa-sign-in:before { content: "\eed4"; }
+.fa-sign-out:before { content: "\eeda"; }
+.fa-bug:before { content: "\eb07"; }
+.fa-th:before { content: "\ea44"; }
+.fa-check:before { content: "\eb7b"; font-weight: 600; }
+.fa-times:before { content: "\eb98"; font-weight: 600; }
+.fa-calendar:before { content: "\eb25"; }
+.fa-clock-o:before { content: "\f3f3"; }
+.fa-comment:before { content: "\ec0e"; }
+.fa-comments:before { content: "\ef48"; }
+.fa-inbox:before { content: "\ee4f"; }
+.fa-history:before { content: "\eb61"; }
+.fa-home:before { content: "\ee1d"; }
+.fa-th-list:before { content: "\eeb9"; }
+.fa-smile-o:before { content: "\ec8d"; }
+.fa-map-marker:before { content: "\ef14"; }
+.fa-star-o:before {
+    content: "\f18b";
+    vertical-align: text-bottom;
+}
+
+.fa-star:before {
+    content: "\f186";
+    vertical-align: text-bottom;
+}
+
+// == Sizing
+
+.o_cp_switch_buttons {
+
+    .oi-view-list:before,
+    .oi-view-kanban:before,
+    .oi-view-pivot:before,
+    .fa-area-chart:before,
+    .fa-calendar:before,
+    .fa-clock-o:before {
+        font-size: larger !important;
+    }
+}
+
+.o_main_navbar {
+
+    .ri-layout-left-2-line:before,
+    .ri-function-line:before,
+    .fa-bug:before,
+    .fa-clock-o:before,
+    .fa-comments:before {
+        font-size: large;
+        line-height: 1;
+    }
+}
+
+.o_pivot_flip_button.fa-exchange,
+.o_graph_button.fa-line-chart {
+    font-weight: 600 !important;
+    font-size: 15px;
+}
+
+.o-mail-Followers-button .fa-user-o,
+.o_search_panel_section_icon,
+.o_graph_button.fa-signal,
+.o_cell .fa-area-chart,
+.o_data_cell .fa-list,
+.o_data_cell .fa-history,
+.o_data_cell .fa-paperclip,
+.o_data_cell .fa-area-chart,
+.o_debug_manager i.fa-bug {
+    font-size: larger !important;
+}

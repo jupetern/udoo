@@ -1,0 +1,153 @@
+// == General
+// ============================================================================
+
+.scrolkit,
+.o-dropdown--menu.dropdown-menu {
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+* {
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #7d7d7d3d;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #b4b4b457;
+    }
+}
+
+// == Text Status
+.btn-warning,
+.text-bg-warning {
+    color: $o-white !important;
+}
+
+// == Text Selection
+::selection {
+    background: $o-brand-primary;
+    color: white;
+}
+
+// == Navbar
+.o_menu_systray {
+    gap: 3px;
+}
+
+
+// == Control Panel
+// ============================================================================
+
+.o_control_panel_main_buttons,
+.o_statusbar_buttons {
+
+    .btn-primary,
+    .btn-secondary {
+        text-transform: capitalize;
+        text-wrap: nowrap;
+    }
+}
+
+.o_control_panel {
+    padding-bottom: 10px !important;
+}
+
+ol.breadcrumb {
+    margin-bottom: 1px;
+}
+
+.o_breadcrumb {
+    margin-left: 4px;
+}
+
+.badge i {
+    font-size: 13px !important;
+}
+
+.o_cp_pager {
+
+    .o_pager_previous,
+    .o_pager_next {
+        line-height: $o-line-height-base;
+    }
+}
+
+
+// == List
+// ============================================================================
+
+td.o_data_cell {
+
+    >.o_field_text>span {
+        display: -webkit-box !important;
+        white-space: pre-wrap !important;
+        clip-path: stroke-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}
+
+// == Pivot
+// ============================================================================
+
+thead .o_pivot_measure_row {
+    font-weight: 600 !important;
+    color: $o-gray-600 !important;
+    padding-inline: 8px;
+}
+
+
+// == Kanban
+// ============================================================================
+
+.o_kanban_renderer.o_kanban_grouped .o_kanban_record>div::after {
+    width: 2px !important;
+}
+
+.o_kanban_renderer.o_kanban_ungrouped .o_kanban_record>div::after {
+    width: 2px !important;
+    left: -1px !important;
+}
+
+
+// == Calendar
+// ============================================================================
+
+.o_calendar_header {
+    text-transform: capitalize;
+}
+
+.fc-month-container {
+    h2 {
+        text-transform: capitalize;
+    }
+}
+
+
+// == Hierarchy
+// ============================================================================
+
+.o_hierarchy_node_header {
+    color: $o-white;
+}
+
+
+// == Modules
+// ============================================================================
+
+.o_menu_brand,
+.o_nav_entry,
+.o_menu_sections div button {
+    text-transform: capitalize;
+}

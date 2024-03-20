@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-inherit="web.Dialog.header" t-inherit-mode="extension">
+        <xpath expr="//t[@t-if='fullscreen']" position="after">
+            <t t-else="">
+                <button class="btn btn-sm btn-light ri-picture-in-picture-fill fs-4 me-1" data-tooltip="Expand" data-hotkey="m" tabindex="-1" t-on-click="toggle_dialog_size" />
+            </t>
+        </xpath>
+    </t>
+    <t t-inherit="web.ActionDialog.header" t-inherit-mode="extension">
+        <xpath expr="//t[@t-if='fullscreen']" position="after">
+            <t t-else="">
+                <button class="btn btn-sm btn-light ri-picture-in-picture-fill fs-4 me-1" data-tooltip="Expand" data-hotkey="m" tabindex="-1" t-on-click="toggle_dialog_size" />
+            </t>
+        </xpath>
+    </t>
+    <t t-inherit="web.SelectCreateDialog" t-inherit-mode="extension">
+        <xpath expr="//Dialog" position="attributes">
+            <attribute name="size">props.size</attribute>
+        </xpath>
+    </t>
+</templates>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_module_filter_ih" model="ir.ui.view">
+        <field name="name">ir.module.module.list.ih</field>
+        <field name="model">ir.module.module</field>
+        <field name="inherit_id" ref="base.view_module_filter"/>
+        <field name="arch" type="xml">
+            <filter name="extra" position="after">
+                <separator/>
+                <filter name="ftr_odoo" string="By Odoo" domain="['|','|',('author', '=', 'Odoo'),('author','ilike','Odoo SA'),('author','ilike','Odoo S.A.')]"/>
+            </filter>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.ControlPanel" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_cp_pager')]" position="before">
+            <nav class="u_refresher" aria-label="Pager">
+                <span aria-atomic="true">
+                    <button i-if="canRefresh" class="btn btn-light u_pager_refresh ri-loop-right-fill" aria-label="Refresh" title="Refresh" tabindex="-1" t-on-click="doRefresh"/>
+                </span>
+            </nav>
+        </xpath>
+    </t>
+
+</templates>

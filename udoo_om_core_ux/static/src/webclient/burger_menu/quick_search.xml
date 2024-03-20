@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="udoo_om_core_ux.CommandPalette">
+        <div class="o-dropdown dropdown o-dropdown--no-caret">
+            <button class="dropdown-toggle"
+                title="Command Palette"
+                t-on-click="openMainPalette"
+                data-hotkey="z">
+                    <i class="ri-lg ri-function-line"/>
+            </button>
+        </div>
+    </t>
+
+</templates>

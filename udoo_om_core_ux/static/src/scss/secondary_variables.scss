@@ -1,0 +1,8 @@
+// UI custom colors for tags, kanban records' colors, ...)
+$o-colors: #A2A2A2, #DC67AB, #38c0e9, #35c5a6, #FAB446, #A367DC, #DB8865,
+    #50CD89, #6771DC, #F7636C, #2cb9cc, #8757EC !default;
+
+// Needed for having no spacing between sheet and mail body in mass_mailing:
+// Different required cancel paddings between web and web_enterprise
+$o-sheet-cancel-tpadding: $o-horizontal-padding !default;
+$o-sheet-cancel-bpadding: $o-horizontal-padding + $o-sheet-vpadding !default;

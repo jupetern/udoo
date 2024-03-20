@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.NavBar" t-inherit-mode="extension">
+        <xpath expr="//t[@t-call='web.NavBar.AppsMenu']" position="replace">
+            <t t-call="udoo.NavBar.AppsMenu"/>
+        </xpath>
+    </t>
+
+    <t t-name="udoo.NavBar.AppsMenu">
+        <div class="o-dropdown dropdown o-dropdown--no-caret o_navbar_apps_menu">
+            <button data-hotkey="h" class="btn btn-secondary dropdown-toggle" type="button" id="umenu_toggler"
+                t-on-click="() => { state.ueuopen = !state.ueuopen; }"
+                t-att-aria-expanded="state.ueuopen ? 'true' : 'false'">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="o_menu_toggle_icon" width="14px" height="14px" viewBox="0 0 14 14">
+                    <g xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="o_menu_toggle_row_0">
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="0" y="0"></rect>
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="5" y="0"></rect>
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="10" y="0"></rect>
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="o_menu_toggle_row_1">
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="0" y="5"></rect>
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="5" y="5"></rect>
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="10" y="5"></rect>
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="o_menu_toggle_row_2">
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="0" y="10"></rect>
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="5" y="10"></rect>
+                        <rect xmlns="http://www.w3.org/2000/svg" width="3" height="3" x="10" y="10"></rect>
+                    </g>
+                </svg>
+            </button>
+            <div role="menu" class="umenu scrolkit dropdown-menu"
+                t-att-class="{ 'show': state.ueuopen }"
+                aria-labelledby="umenu_toggler">
+
+                <div class="o_apps d-flex mx-0" role="listbox">
+                    <div t-foreach="apps" t-as="app" t-key="app.id" class="u_app_grid">
+                        <a t-att-id="'result_app_' + app_index"
+                            role="option"
+                            class="o_app d-block"
+                            t-att-aria-selected="state.focusix === app_index ? 'true' : 'false'"
+                            t-att-class="{o_focused: _isCurrentApp(app)}"
+                            t-att-data-menu-xmlid="app.xmlid"
+                            t-att-href="getMenuItemHref(app)"
+                            t-on-click="() => { state.focusix = app_index; menuService.selectMenu(app); state.ueuopen = false; }">
+
+                            <div class="u_app_icon_l2">
+                                <div class="u_app_icon_l1">
+                                    <img t-if="app.webIconData" class="u_app_icon rounded-3" t-attf-src="{{app.webIconData}}" />
+                                    <div t-else=""
+                                        class="u_app_icon position-relative d-flex justify-content-center align-items-center w-75 p-2 rounded-3 ratio ratio-1x1"
+                                        t-attf-style="background-color: {{app.webIcon.backgroundColor}};">
+
+                                        <i t-attf-class="{{app.webIcon.iconClass}} position-relative w-auto h-auto"
+                                        t-attf-style="color: {{app.webIcon.color}};"/>
+
+                                    </div>
+                                </div>                                        
+                            </div>
+                            <div class="u_app_caption w-100 text-center text-truncate mt-2" t-att-data-tooltip="app.label or app.name" t-esc="app.label or app.name"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

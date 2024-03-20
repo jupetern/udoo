@@ -1,0 +1,218 @@
+//== Apps Hambuger
+.umenu {
+    background-color: $u-menu-background;
+    border-radius: $o-border-radius-lg !important;
+    box-sizing: content-box;
+
+    .o_apps {
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 360px;
+        min-width: 277px;
+        padding-inline: 4px;
+        padding-top: 14px;
+        padding-bottom: 5px;
+        column-gap: .5rem;
+        row-gap: 1.5rem;
+
+        .u_app_grid {
+            width: 82px;
+            padding-inline: 0;
+
+            .o_app {
+                &.o_focused {
+                    .u_app_icon {
+                        box-shadow: 0 10px 15px -10px $o-gray-900;
+                    }
+                }
+            }
+
+            .u_app_icon_l2 {
+                width: min-content;
+                margin: 0 auto;
+
+                border-radius: $u-border-radius-lg;
+                background: $u-app-background;
+                box-shadow: $u-app-shadow-o;
+
+                .u_app_icon_l1 {
+                    padding: 9px;
+
+                    .u_app_icon {
+                        height: 33px;
+                        width: 33px;
+                    }
+                }
+            }
+
+            .u_app_caption {
+                max-width: 72%;
+                margin: 0 auto;
+                color: $o-gray-900;
+            }
+        }
+
+        .o_app:hover {
+            background-color: transparent !important;
+
+            .u_app_icon_l2 {
+                box-shadow: $u-app-shadow-o-hover;
+
+                .u_app_icon {
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+}
+
+
+// = Main Navbar
+// ============================================================================
+.o_main_navbar {
+    @include print-variable(o-navbar-height, $o-navbar-height);
+
+    --NavBar-entry-color--active: #{$o-component-active-color};
+    --NavBar-entry-borderColor-active: #{$o-component-active-border};
+    --NavBar-entry-backgroundColor--active: #{$o-component-active-bg};
+    --NavBar-entry-backgroundColor--hover: #{$o-gray-200};
+    --NavBar-entry-backgroundColor--focus: #{$o-gray-200};
+
+    --Dropdown_menu-margin-y: #{map-get($spacers, 1)};
+
+    display: flex;
+    height: var(--o-navbar-height);
+    min-width: min-content;
+    padding-top: $o-navbar-padding-v;
+    padding-bottom: $o-navbar-padding-v;
+    border-bottom: $o-navbar-border-bottom;
+    background: $o-navbar-background;
+    font-size: $o-navbar-font-size;
+
+    // = Reset browsers defaults
+    // --------------------------------------------------------------------------
+    >ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    // = General components & behaviours
+    // --------------------------------------------------------------------------
+
+    .o_nav_entry,
+    .dropdown-toggle {
+        @extend %-main-navbar-entry-base;
+        @extend %-main-navbar-entry-spacing;
+        border-color: transparent;
+    }
+
+    .o_menu_sections {
+
+        .o_nav_entry,
+        .dropdown-toggle {
+            background: var(--NavBar-entry-backgroundColor, #{$o-navbar-background});
+            border: $border-width solid transparent;
+
+            &:hover {
+                background: var(--NavBar-entry-backgroundColor--hover, #{$o-navbar-entry-bg--hover});
+            }
+
+            &:focus {
+                background: var(--NavBar-entry-backgroundColor--focus, #{$o-navbar-entry-bg--hover});
+            }
+
+            &:active {
+                background: var(--NavBar-entry-backgroundColor--active, #{$o-navbar-entry-bg--active});
+            }
+        }
+
+        .dropdown.show>.dropdown-toggle {
+            border-color: var(--NavBar-entry-borderColor-active, transparent);
+            background: var(--NavBar-entry-backgroundColor--active, #{$o-navbar-entry-bg--active});
+            color: var(--NavBar-entry-color--active, #{$o-navbar-entry-color--active});
+        }
+    }
+
+    .dropdown-menu {
+        border-top: $o-navbar-dropdown-menu-border-top;
+        border-radius: $o-navbar-dropdown-menu-border-radius;
+
+        .disabled {
+            cursor: default;
+        }
+    }
+
+    .dropdown-header.dropdown-menu_group {
+        margin-top: 0;
+    }
+
+    .dropdown-item+.dropdown-header:not(.o_more_dropdown_section_group) {
+        margin-top: .3em;
+    }
+
+    .o_dropdown_menu_group_entry.dropdown-item {
+        padding-left: $o-dropdown-hpadding * 1.5;
+
+        +.dropdown-item:not(.o_dropdown_menu_group_entry) {
+            margin-top: .8em;
+        }
+    }
+
+    // = Navbar Sections & Children
+    // --------------------------------------------------------------------------
+    .o_navbar_apps_menu .dropdown-toggle {
+        --NavBar-entry-padding-left: #{$o-horizontal-padding};
+
+        @extend %-main-navbar-entry-base;
+        font-size: $o-navbar-brand-font-size;
+    }
+
+    .o_menu_brand {
+        @extend %-main-navbar-entry-base;
+        @extend %-main-navbar-entry-spacing;
+        padding-left: 0;
+        font-size: $o-navbar-brand-font-size;
+        color: var(--NavBar-brand-color, #{$o-navbar-brand-color});
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    .o_menu_sections {
+        .o_more_dropdown_section_group {
+            margin-top: .8em;
+
+            &:first-child {
+                margin-top: $dropdown-padding-y * -1;
+                padding-top: $dropdown-padding-y * 1.5;
+            }
+        }
+    }
+
+    .o_menu_systray {
+        --NavBar-entry-padding-left: #{$o-navbar-entry-padding-h * 0.5};
+        --NavBar-entry-padding-right: #{$o-navbar-entry-padding-h * 0.5};
+
+        .badge {
+            line-height: 1;
+            font-weight: 700;
+            height: 13px;
+            border-radius: $o-border-radius-sm !important;
+            padding: $o-navbar-badge-padding ($o-navbar-badge-padding * 2);
+            background-color: var(--o-navbar-badge-bg, #{$o-navbar-badge-bg});
+            font-size: $o-navbar-badge-size;
+            color: var(--o-navbar-badge-color, $o-navbar-badge-color);
+            transform: translate(8%, -61%);
+        }
+    }
+}
+
+
+// = SuperUser Design
+// ============================================================================
+body.o_is_superuser .o_menu_systray {
+    border-image: repeating-linear-gradient(135deg, #d9b904, #d9b904 10px, #373435 10px, #373435 20px) 2;
+    border-image-width: map-get($border-widths, 2);
+}

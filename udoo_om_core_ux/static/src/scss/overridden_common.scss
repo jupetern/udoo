@@ -1,0 +1,20 @@
+// = Body Background
+// ============================================================================
+$light-dm-background: url(/udoo_om_core_ux/static/img/background-light.svg) !default;
+$light-dm-blend: unset !default;
+$light-dm-size: cover !default;
+
+body.light-dm {
+    background: $light-dm-background;
+    background-blend-mode: $light-dm-blend;
+    background-size: $light-dm-size;
+
+    .o_database_list {
+        box-shadow: 0px 4px 8px rgba(25, 39, 52, .06),
+            0px 0px 4px rgba(25, 39, 52, .12);
+
+        >div {
+            padding-inline: 1.3vmax;
+        }
+    }
+}
