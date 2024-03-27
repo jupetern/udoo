@@ -16,6 +16,8 @@
     ],
     'data': [
         'views/ir_views.xml',
+        'views/ir_module_module_views.xml',
+        'views/webclient_templates.xml',
     ],
     'assets': {
         'web._assets_primary_variables': {

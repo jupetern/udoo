@@ -11,13 +11,4 @@
             <meta name="theme-color" t-att-content="'#242733' if request.httprequest.cookies.get('color_scheme') == 'dark' else '#714B67'"/>
         </xpath>
     </template>
-
-    <template id="login_layout" inherit_id="web.login_layout">
-        <xpath expr="//a[@href='https://www.odoo.com?utm_source=db&amp;utm_medium=auth']" position="replace">
-            <a t-att-href="brand_url" target="_blank">Powered by <span>
-                <t t-out="brand_name"/>
-            </span>
-        </a>
-    </xpath>
-</template>
 </odoo>

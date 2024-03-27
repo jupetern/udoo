@@ -22,7 +22,6 @@
         'web_enterprise',
     ],
     'data': [
-        'views/ir_module_module_views.xml',
         'views/webclient_templates.xml',
     ],
     'assets': {

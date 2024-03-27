@@ -35,6 +35,6 @@ class IrUiMenu(models.Model):
                 elif backgroundColor is not None:  # Could split in three parts?
                     menu['webIcon'] = ','.join([iconClass or '', color or '', backgroundColor])
                 else:
-                    menu['webIconData'] = '/udoo_om_ux/static/img/default_icon_app.png'
+                    menu['webIconData'] = '/udoo_base/static/img/default_icon_app.png'
 
         return menus
